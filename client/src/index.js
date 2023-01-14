@@ -6,15 +6,15 @@ switch (CONFIG.layout){
     // import layout specific files
     // import('./styles/themes/nord.css').catch((err) => {console.error(err);});
     loadCSS('./themes/' + CONFIG.theme + '.css');
-    import('./modules/status-line/status-line.js').then((res) => {
+    import('./components/status-line/status-line.js').then((res) => {
       let STAT = res;
       // using the module
       STAT.buildStatus();
     }).catch((err) => {
       console.error(err);
     });
-    import('./modules/terminal-nav/terminal-nav.js').catch((err) => {console.error(err);});
-    import('./modules/command-prompt/command-prompt.js').then((res) => {
+    import('./components/terminal-nav/terminal-nav.js').catch((err) => {console.error(err);});
+    import('./components/command-prompt/command-prompt.js').then((res) => {
       let CMD = res;
       // using the module
       CMD.setFocus(document.getElementById("inpt"));
