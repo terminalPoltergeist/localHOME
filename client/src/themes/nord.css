@@ -1,0 +1,56 @@
+/* Nord theme colors */
+:root{
+  --background: #2e3440;
+  --text: #c5c8c6;
+  --special-text: #b48ead;
+  --accents: {
+    --primary: #a54242;
+    --secondary: #de935f;
+    --tertiary: #f0c674;
+    --quanaternary: #8c9440;
+    --quinary: #85678f;
+  }
+}
+
+/* Nord basic styles */
+html {
+  align-items: center;
+  background-color: #2e3440;
+  color: #c5c8c6;
+  display: flex;
+  font: 22px/1 "Inconsolata", monospace;
+  height: 100%;
+  justify-content: center;
+}
+
+body {
+  background-color: #2e3440;
+  border-radius: 2px;
+  box-shadow: 1px 1px 6px #2e3440;
+  color: #c5c8c6;
+  display: flex;
+  flex-direction: column;
+  min-height: 30ch;
+  min-width: 50vw;
+  padding: 2em;
+  width: 70%;
+  height: 70%;
+}
+
+p {
+  margin: 0;
+}
+
+p span {
+  color: #b48ead;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  font-weight: bold;
+}

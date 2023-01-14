@@ -3,8 +3,17 @@ html
     script(src='build/index.js' defer='')
     title #{CONFIG.name} @ $Home
   body
+    script(type="text/javascript").
+      const CONFIG = !{JSON.stringify(CONFIG)};
+      function loadCSS(filename){ 
+        var file = document.createElement("link");
+        file.setAttribute("rel", "stylesheet");
+        file.setAttribute("type", "text/css");
+        file.setAttribute("href", "./src/" + filename);
+        document.head.appendChild(file);
+      }
     p
-      span Jack @ $HOME &gt;
+      span #{CONFIG.name} @ $HOME &gt;
       span#status
     nav
       ul
@@ -40,7 +49,7 @@ html
         li
           a(href='https://www.ultimate-guitar.com/user/mytabs' target='_blank') ultimate-guitar
     .search
-      span Jack @ $HOME &gt;&nbsp;
+      span #{CONFIG.name} @ $HOME &gt;&nbsp;
       .prompt
         span#inpt(contenteditable='true')
         span#cursor _

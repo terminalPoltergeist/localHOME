@@ -20,7 +20,7 @@ module.exports = {
           'style-loader',
           'css-loader'
         ],
-        include: path.resolve(__dirname, 'client/src/styles')
+        // include: path.resolve(__dirname, 'client/src/styles')
       },
     ],
   },

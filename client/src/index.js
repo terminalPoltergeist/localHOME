@@ -1,17 +1,33 @@
 // entry file for the main page
-import * as CMD from './modules/command-prompt.js';
 import CONFIG from './config';
-// conditionally import styles for layouts/themes
+// conditionally import modules for each layouts/themes
 switch (CONFIG.layout){
   case 'terminal':
-    import('./styles/layouts/terminal/index.css').catch((err) => {console.error(err)});
+    // import layout specific files
+    // import('./styles/themes/nord.css').catch((err) => {console.error(err);});
+    loadCSS('./themes/' + CONFIG.theme + '.css');
+    import('./modules/status-line/status-line.js').then((res) => {
+      let STAT = res;
+      // using the module
+      STAT.buildStatus();
+    }).catch((err) => {
+      console.error(err);
+    });
+    import('./modules/terminal-nav/terminal-nav.js').catch((err) => {console.error(err);});
+    import('./modules/command-prompt/command-prompt.js').then((res) => {
+      let CMD = res;
+      // using the module
+      CMD.setFocus(document.getElementById("inpt"));
+      CMD.setCommand("config", function conf() {
+        window.location.replace("http://localhost:30000/config");
+      });
+      CMD.listen(document.getElementById("inpt"));
+    }).catch((err) => {
+      console.error(err);
+    });
     break;
   default:
     break;
 }
 
-CMD.setFocus(document.getElementById("inpt"));
-CMD.setCommand("config", function conf() {
-  window.location.replace("http://localhost:30000/config");
-});
-CMD.listen(document.getElementById("inpt"));
+
