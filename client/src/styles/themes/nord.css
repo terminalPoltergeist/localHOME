@@ -1,0 +1,13 @@
+/* Nord theme values */
+:root{
+  --background: #2e3440;
+  --text: #c5c8c6;
+  --special-text: #b48ead;
+  --accents: {
+    --primary: #a54242;
+    --secondary: #de935f;
+    --tertiary: #f0c674;
+    --quanaternary: #8c9440;
+    --quinary: #85678f;
+  }
+}

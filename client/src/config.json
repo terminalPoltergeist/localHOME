@@ -1,0 +1,13 @@
+{
+  "name": "Jack",
+  "openInNewTab": true,
+  "twentyFourHourTime": false,
+  "greetings": {
+    "morning": "Good morning, ",
+    "afternoon": "Good afternoon, ",
+    "evening": "Good evening, ",
+    "night": "Go to bed!"
+  },
+  "layout": "terminal",
+  "theme": "nord"
+}

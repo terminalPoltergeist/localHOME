@@ -1,0 +1,11 @@
+{
+  "app": {
+    "port": 30000,
+    "weatherAPI": {
+      "key": "[API Key]",
+      "autoFind": true,
+      "latitude": "44.977753",
+      "longitude": "-93.265015"
+    }
+  }
+}

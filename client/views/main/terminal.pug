@@ -1,0 +1,46 @@
+html
+  head
+    script(src='build/index.js' defer='')
+    title #{CONFIG.name} @ $Home
+  body
+    p
+      span Jack @ $HOME &gt;
+      span#status
+    nav
+      ul
+        li general
+        li
+          a(href='https://www.instagram.com/' target='_blank') instagram
+        li
+          a(href='https://www.youtube.com/' target='_blank') youtube 
+        li
+          a(href='https://www.pinterest.com/' target='_blank') pinterest
+      ul
+        li school
+        li
+          a(href='https://www.myu.umn.edu/' target='_blank') my-u
+        li
+          a(href='https://canvas.umn.edu' target='_blank') canvas
+        li
+          a(href='https://www.gradescope.com' target='_blank') gradescope
+      ul
+        li work
+        li
+          a(href='https://github.umn.edu/nemit031' target='_blank') github
+        li
+          a(href='https://tdx.umn.edu/TDNext/Home/Desktop/Default.aspx' target='_blank') team-dynamix
+        li
+          a(href='https://umn.tpondemand.com/RestUI/Board.aspx#page=board/5370423355796479053&appConfig=eyJhY2lkIjoiRjkxQ0U5QUUzRjRDRTc0NTdFOUZDMkJGODY1MDBGNUUifQ==' target='_blank') target-process
+      ul
+        li play
+        li
+          a(href='https://github.com/terminalPoltergeist' target='_blank') github
+        li
+          a(href='https://www.discogs.com' target='_blank') discogs
+        li
+          a(href='https://www.ultimate-guitar.com/user/mytabs' target='_blank') ultimate-guitar
+    .search
+      span Jack @ $HOME &gt;&nbsp;
+      .prompt
+        span#inpt(contenteditable='true')
+        span#cursor _

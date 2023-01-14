@@ -1,0 +1,13 @@
+html
+  head
+    script(src='build/settings.js' defer='')
+    title #{CONFIG.name} @ $Home
+  body
+    p
+      span Jack @ $HOME &gt;
+      span#status
+    .search
+      span Jack @ $HOME &gt;&nbsp;
+      .prompt
+        span#inpt(contenteditable='true')
+        span#cursor _
