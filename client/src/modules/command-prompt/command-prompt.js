@@ -10,6 +10,8 @@ module for simulating a cmd line interface
 // create functions to customize based on theme, main function with switch to set theme components and export
 
 const CMD = {'commands': {}};
+loadCSS('./modules/command-prompt/command-prompt.css');
+// import("./command-prompt.css").catch((err) => {console.error(err)});
 
 // force focus
 function setFocus(e){
@@ -108,20 +110,6 @@ function parseCmd(cmd){
     location.reload();
   }
 }
-
-// inpt.addEventListener("keydown", (e) => {
-//   if (e.keyCode == 13){
-//     e.preventDefault();
-//     let url = window.location.href + "?cmd=" + inpt.textContent;
-//     appendHistory();
-//     parseCmd(inpt.textContent);
-//     inpt.textContent = "";
-//     while (document.getElementsByClassName("search")[0].getBoundingClientRect().bottom > 868.5){
-//       let child = document.querySelector("body").firstChild;
-//       document.querySelector("body").removeChild(child);
-//     }
-//   }
-// });
 
 CMD.setFocus = setFocus;
 CMD.listen = listen;

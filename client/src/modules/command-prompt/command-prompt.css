@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  color: #b48ead;
+  margin: 4px 0px;
+}
+
+.search #cursor {
+  background-color: #b48ead;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  49% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.search .prompt #inpt{
+  background-color: #2e3440;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+}
