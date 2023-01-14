@@ -1,6 +1,6 @@
 {
   "name": "localHOME",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "a locally hosted start page for my browser",
   "private": true,
   "scripts": {
