@@ -21,7 +21,7 @@
 <br/>
 
 ## Installation
-Currently there is no packaging for this project. The source must be downloaded and the app build manually.
+Currently there is no packaging for this project. The source must be downloaded and the app built manually.
 <br/>
 To do so, download the .zip file from the latest [release](https://github.com/terminalPoltergeist/localHOME/releases).
 <br/>
