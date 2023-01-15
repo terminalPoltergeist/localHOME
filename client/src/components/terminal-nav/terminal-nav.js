@@ -1,1 +1,1 @@
-loadCSS('./modules/terminal-nav/terminal-nav.css');
+loadCSS('./components/terminal-nav/terminal-nav.css');

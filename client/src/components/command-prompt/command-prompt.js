@@ -10,7 +10,7 @@ module for simulating a cmd line interface
 // create functions to customize based on theme, main function with switch to set theme components and export
 
 const CMD = {'commands': {}};
-loadCSS('./modules/command-prompt/command-prompt.css');
+loadCSS('./components/command-prompt/command-prompt.css');
 // import("./command-prompt.css").catch((err) => {console.error(err)});
 
 // force focus
