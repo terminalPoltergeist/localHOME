@@ -35,3 +35,6 @@ Then run ```npm start``` to start the server.
 
 - [ ] make custom page for editing configs
 - [ ] integrate sql for configs?
+
+### Credit 
+
