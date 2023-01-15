@@ -7,6 +7,6 @@ assignees: ''
 
 ---
 
-Current Behaviour(s):
+Current Behavior(s):
 
 Suggested Improvement(s):
