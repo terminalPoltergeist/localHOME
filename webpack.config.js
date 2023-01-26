@@ -12,6 +12,9 @@ module.exports = {
     publicPath: '/build/',
     clean: true,
   },
+  resolve: {
+    modules: ['client/src/components']
+  },
   module: {
     rules: [
       {
