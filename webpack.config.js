@@ -4,7 +4,6 @@ const path = require('path');
 module.exports = {
   entry: {
     index: [path.join(__dirname,  "client", "src", "index.js")],
-    settings: [path.join(__dirname, "client", "src", "settings.js")]
   },
   output: {
     path: path.join(__dirname, 'client/build'),

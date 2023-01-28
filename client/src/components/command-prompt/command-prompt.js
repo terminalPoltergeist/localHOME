@@ -37,9 +37,12 @@ function listen(e){
       if (Object.keys(CMD["commands"]).includes(e.textContent)){
         CMD["commands"][e.textContent]();  // call the callback
       } else {
-        // 
         let url = "https://www.google.com/search?key=AIzaSyD2mogAW8iAuKjHin_mKT2HuN6wnO45HZU&q=" + e.textContent;
-        window.open(url, "_self");
+        if (CONFIG.openInNewTab){
+          window.open(url);
+        } else {
+          window.open(url, "_self");
+        }
       }
       inpt.textContent = "";  // clear the text area
     }

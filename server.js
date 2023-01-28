@@ -22,14 +22,14 @@ app.get("/", (req, res) => {
   }
 });
 
-app.get("/config", (req, res) => {
-  if (fs.existsSync("./client/views/settings/" + client_config.layout + ".pug")){
-    res.render("settings/" + client_config.layout);
-  } else {
-    console.log("Layout does not exist, defaulting to Terminal");
-    res.render("settings/terminal");
-  }
-});
+// app.get("/config", (req, res) => {
+//   if (fs.existsSync("./client/views/settings/" + client_config.layout + ".pug")){
+//     res.render("settings/" + client_config.layout);
+//   } else {
+//     console.log("Layout does not exist, defaulting to Terminal");
+//     res.render("settings/terminal");
+//   }
+// });
 
 // api
 app.get("/api/client-configs", (req, res) => {

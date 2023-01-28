@@ -16,7 +16,13 @@ We use github to host code, to track issues and feature requests, as well as acc
 This means:
 - the ```main``` branch is protected, production level code
 - release branches are akin to beta releases, development on this branch should consist only of bug fixes
+  - after each release, a new release cycle starts. A release branch is made from ```main```
+  - once ```develop``` is ready for testing, ```develop``` will be merged into the release branch 
+  - testing and fixes will be done 
+  - the release branch will then be merged into ```main```
 - the ```develop``` branch is akin to a staging environment, feature branches should be merged to here
+  - after a release, this branch should be updated from ```main```
+  - when ready to test, this branch should be merged into the current release branch
 
 To contribute to the codebase:
 1. [Fork the repo]("https://github.com/terminalPoltergeist/localHOME/fork")
