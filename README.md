@@ -15,7 +15,7 @@
 
   <img src="https://img.shields.io/github/license/terminalPoltergeist/localHOME?color=blue&style=for-the-badge" alt="license">
   <img src="https://img.shields.io/github/commit-activity/m/terminalPoltergeist/localHOME?color=blue&style=for-the-badge" alt="commit frequency">
-  <img src="https://img.shields.io/github/v/release/terminalPoltergeist/localHOME?color=blue&style=for-the-badge" alt="release">
+  <img src="https://img.shields.io/docker/pulls/terminalpoltergeist/localhome?style=for-the-badge" alt="docker pulls">
 </div>
 
 <br/>
