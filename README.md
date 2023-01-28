@@ -30,3 +30,4 @@ We're Dockerized!
 *things I would like to implement. This will be migrated to issues upon inital release*
 
 - [ ] make custom page for editing configs
+
