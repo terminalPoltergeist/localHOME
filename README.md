@@ -21,13 +21,16 @@
 <br/>
 
 ## Installation
-Currently there is no packaging for this project. The source must be downloaded and the app built manually.
+~~Currently there is no packaging for this project. The source must be downloaded and the app built manually.~~
 <br/>
-To do so, download the .zip file from the latest [release](https://github.com/terminalPoltergeist/localHOME/releases).
+~~To do so, download the .zip file from the latest [release](https://github.com/terminalPoltergeist/localHOME/releases).~~
 <br/>
-Open the archive and run ```npm run build``` to build the webpack bundles.
+~~Open the archive and run ```npm run build``` to build the webpack bundles.~~
 <br/>
-Then run ```npm start``` to start the server.
+~~Then run ```npm start``` to start the server.~~
+We're Dockerized! Currently the image is for arm64, planning to make available for more architectures soon.
+<br/>
+```docker run -d -p 30000:30000 --name localHome terminalpoltergeist/localhome:latest```
 
 
 ### To-dos
