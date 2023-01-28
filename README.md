@@ -21,14 +21,7 @@
 <br/>
 
 ## Installation
-~~Currently there is no packaging for this project. The source must be downloaded and the app built manually.~~
-<br/>
-~~To do so, download the .zip file from the latest [release](https://github.com/terminalPoltergeist/localHOME/releases).~~
-<br/>
-~~Open the archive and run ```npm run build``` to build the webpack bundles.~~
-<br/>
-~~Then run ```npm start``` to start the server.~~
-We're Dockerized! Currently the image is for arm64, planning to make available for more architectures soon.
+We're Dockerized!
 <br/>
 ```docker run -d -p 30000:30000 --name localHome terminalpoltergeist/localhome:latest```
 
@@ -37,4 +30,3 @@ We're Dockerized! Currently the image is for arm64, planning to make available f
 *things I would like to implement. This will be migrated to issues upon inital release*
 
 - [ ] make custom page for editing configs
-- [ ] integrate sql for configs?
